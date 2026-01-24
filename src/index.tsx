@@ -444,7 +444,7 @@ app.get('/', (c) => {
                         <!-- Photo container -->
                         <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl">
                             <img 
-                                src="https://www.genspark.ai/api/files/s/H04uf9iS" 
+                                src="/static/laith-photo.png" 
                                 alt="Laith Mimi - Software Engineer & AI Builder"
                                 class="w-full h-full object-cover object-top"
                             />
