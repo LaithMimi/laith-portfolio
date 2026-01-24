@@ -438,15 +438,15 @@ app.get('/', (c) => {
                 <!-- Right side - Photo -->
                 <div class="flex justify-center md:justify-end order-1 md:order-2">
                     <div class="relative">
-                        <!-- Gradient ring behind photo -->
-                        <div class="absolute inset-0 gradient-bg rounded-full blur-2xl opacity-50 scale-110"></div>
+                        <!-- Gradient glow behind photo -->
+                        <div class="absolute inset-0 gradient-bg rounded-3xl blur-3xl opacity-40 scale-105"></div>
                         
                         <!-- Photo container -->
-                        <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl">
+                        <div class="relative w-72 md:w-80 lg:w-96">
                             <img 
                                 src="/static/laith-photo-nobg.png" 
                                 alt="Laith Mimi - Software Engineer & AI Builder"
-                                class="w-full h-full object-cover object-top"
+                                class="w-full h-auto object-contain drop-shadow-2xl"
                             />
                         </div>
                         
