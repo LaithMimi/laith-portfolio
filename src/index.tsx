@@ -401,33 +401,67 @@ app.get('/', (c) => {
 
     <!-- Hero Section -->
     <section id="hero" class="min-h-screen flex items-center justify-center relative px-6 pt-20">
-        <div class="max-w-4xl mx-auto text-center reveal">
-            <div class="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-6">
-                <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                <span class="text-sm text-gray-300">Open to opportunities</span>
-            </div>
-            
-            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
-                I build <span class="gradient-text">AI that teaches.</span>
-            </h1>
-            
-            <p class="text-xl md:text-2xl text-gray-400 mb-8 max-w-2xl mx-auto">
-                Founder. Full-stack developer. Obsessed with making education smarter.
-            </p>
-            
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#projects" class="gradient-bg px-8 py-4 rounded-full text-white font-semibold hover:opacity-90 transition-all flex items-center gap-2">
-                    <i class="fas fa-rocket"></i>
-                    View My Work
-                </a>
-                <a href="#contact" class="glass px-8 py-4 rounded-full text-white font-semibold hover:bg-white/10 transition-all flex items-center gap-2">
-                    <i class="fas fa-paper-plane"></i>
-                    Let's Connect
-                </a>
-                <a href="/static/cv.pdf" download class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 px-4 py-4">
-                    <i class="fas fa-download"></i>
-                    Download CV
-                </a>
+        <div class="max-w-6xl mx-auto reveal">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Left side - Text content -->
+                <div class="text-center md:text-left order-2 md:order-1">
+                    <div class="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-6">
+                        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                        <span class="text-sm text-gray-300">Open to opportunities</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
+                        I build <span class="gradient-text">AI that teaches.</span>
+                    </h1>
+                    
+                    <p class="text-xl md:text-2xl text-gray-400 mb-8">
+                        Founder. Full-stack developer. Obsessed with making education smarter.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4">
+                        <a href="#projects" class="gradient-bg px-8 py-4 rounded-full text-white font-semibold hover:opacity-90 transition-all flex items-center gap-2">
+                            <i class="fas fa-rocket"></i>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="glass px-8 py-4 rounded-full text-white font-semibold hover:bg-white/10 transition-all flex items-center gap-2">
+                            <i class="fas fa-paper-plane"></i>
+                            Let's Connect
+                        </a>
+                    </div>
+                    
+                    <a href="/static/cv.pdf" download class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors mt-4 px-4 py-2">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+                
+                <!-- Right side - Photo -->
+                <div class="flex justify-center md:justify-end order-1 md:order-2">
+                    <div class="relative">
+                        <!-- Gradient ring behind photo -->
+                        <div class="absolute inset-0 gradient-bg rounded-full blur-2xl opacity-50 scale-110"></div>
+                        
+                        <!-- Photo container -->
+                        <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl">
+                            <img 
+                                src="https://www.genspark.ai/api/files/s/H04uf9iS" 
+                                alt="Laith Mimi - Software Engineer & AI Builder"
+                                class="w-full h-full object-cover object-top"
+                            />
+                        </div>
+                        
+                        <!-- Floating badges around photo -->
+                        <div class="absolute -top-4 -right-4 glass px-3 py-2 rounded-full text-sm font-medium animate-float">
+                            <i class="fas fa-brain text-primary mr-1"></i> AI Builder
+                        </div>
+                        <div class="absolute -bottom-2 -left-4 glass px-3 py-2 rounded-full text-sm font-medium animate-float" style="animation-delay: 1s;">
+                            <i class="fas fa-code text-secondary mr-1"></i> Full-Stack
+                        </div>
+                        <div class="absolute top-1/2 -right-8 glass px-3 py-2 rounded-full text-sm font-medium animate-float hidden lg:block" style="animation-delay: 2s;">
+                            <i class="fas fa-rocket text-accent mr-1"></i> Founder
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <!-- Scroll indicator -->
