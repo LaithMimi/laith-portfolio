@@ -51,13 +51,53 @@ app.use('/static/*', serveStatic({ root: './public' }))
 // 8. Contact - Clean form/links
 
 // ============================================================================
-// SEO + SOCIAL
+// SEO + SOCIAL (ENHANCED)
 // ============================================================================
 const seo = {
-  title: "Laith Mimi | Software Engineer & AI Builder",
-  description: "Software Engineering student specializing in Agentic AI and full-stack development. Founder of Quest Solutions. Building educational technology that transforms how students learn.",
-  ogDescription: "Meet Laith Mimi — building AI-powered educational tools that learn with you. Founder, developer, and relentless problem solver.",
-  keywords: "Laith Mimi, Software Engineer, AI Developer, Full Stack, Educational Technology, RAG, LangChain, React, Python"
+  // Primary SEO
+  title: "Laith Mimi | Software Engineer & AI Builder | EdTech Founder",
+  description: "Laith Mimi is a Software Engineering student and Founder of Quest Solutions, specializing in Agentic AI, RAG systems, and full-stack development. Building educational technology that transforms how students learn with AI-powered tools like GeeksHub.",
+  ogDescription: "Meet Laith Mimi — Software Engineer building AI-powered educational tools that learn with you. Founder of Quest Solutions, creator of GeeksHub, and passionate about making education smarter through technology.",
+  keywords: "Laith Mimi, Software Engineer, AI Developer, Full Stack Developer, Educational Technology, EdTech, RAG, LangChain, React, Python, FastAPI, Quest Solutions, GeeksHub, Agentic AI, Machine Learning, Jerusalem, Israel, Azrieli College, SaaS, Startup Founder",
+  
+  // Additional SEO data
+  author: "Laith Mimi",
+  siteUrl: "https://laith-mimi-portfolio.pages.dev",
+  twitterHandle: "@laithmimi",
+  locale: "en_US",
+  
+  // Structured Data (JSON-LD)
+  structuredData: {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Laith Mimi",
+    "url": "https://laith-mimi-portfolio.pages.dev",
+    "image": "https://laith-mimi-portfolio.pages.dev/static/laith-photo-nobg.png",
+    "jobTitle": "Software Engineer & AI Builder",
+    "description": "Software Engineering student and Founder of Quest Solutions, specializing in Agentic AI and educational technology.",
+    "email": "Laithmimi03@gmail.com",
+    "telephone": "+972-54-3600249",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jerusalem",
+      "addressCountry": "Israel"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Azrieli College of Engineering",
+      "url": "https://www.jce.ac.il"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Quest Solutions",
+      "description": "SaaS agency focused on educational technology"
+    },
+    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "RAG Systems", "Full Stack Development", "React", "Python", "Educational Technology", "LangChain", "FastAPI"],
+    "sameAs": [
+      "https://linkedin.com/in/laithmimi",
+      "https://github.com/laithmimi"
+    ]
+  }
 }
 
 // ============================================================================
@@ -142,29 +182,144 @@ const microcopy = {
 // Main portfolio HTML
 app.get('/', (c) => {
   return c.html(`<!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags -->
+    <!-- ============================================
+         ENHANCED SEO META TAGS
+         ============================================ -->
+    
+    <!-- Primary Meta Tags -->
     <title>${seo.title}</title>
+    <meta name="title" content="${seo.title}">
     <meta name="description" content="${seo.description}">
     <meta name="keywords" content="${seo.keywords}">
-    <meta name="author" content="Laith Mimi">
+    <meta name="author" content="${seo.author}">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
     
-    <!-- Open Graph / Social -->
+    <!-- Canonical URL -->
+    <link rel="canonical" href="${seo.siteUrl}">
+    
+    <!-- Language & Locale -->
+    <meta name="language" content="English">
+    <meta http-equiv="content-language" content="en">
+    <link rel="alternate" hreflang="en" href="${seo.siteUrl}">
+    
+    <!-- ============================================
+         OPEN GRAPH / FACEBOOK
+         ============================================ -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="${seo.siteUrl}">
     <meta property="og:title" content="${seo.title}">
     <meta property="og:description" content="${seo.ogDescription}">
-    <meta property="og:image" content="/static/og-image.png">
+    <meta property="og:image" content="${seo.siteUrl}/static/laith-photo-nobg.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Laith Mimi - Software Engineer & AI Builder">
+    <meta property="og:site_name" content="Laith Mimi Portfolio">
+    <meta property="og:locale" content="${seo.locale}">
+    
+    <!-- ============================================
+         TWITTER CARD
+         ============================================ -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="${seo.siteUrl}">
     <meta name="twitter:title" content="${seo.title}">
     <meta name="twitter:description" content="${seo.ogDescription}">
+    <meta name="twitter:image" content="${seo.siteUrl}/static/laith-photo-nobg.png">
+    <meta name="twitter:image:alt" content="Laith Mimi - Software Engineer & AI Builder">
+    <meta name="twitter:creator" content="${seo.twitterHandle}">
+    <meta name="twitter:site" content="${seo.twitterHandle}">
     
-    <!-- Fonts -->
+    <!-- ============================================
+         LINKEDIN & PROFESSIONAL
+         ============================================ -->
+    <meta property="profile:first_name" content="Laith">
+    <meta property="profile:last_name" content="Mimi">
+    <meta property="profile:username" content="laithmimi">
+    
+    <!-- ============================================
+         TECHNICAL SEO
+         ============================================ -->
+    <meta name="theme-color" content="#6366F1">
+    <meta name="msapplication-TileColor" content="#6366F1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Laith Mimi">
+    <meta name="application-name" content="Laith Mimi Portfolio">
+    <meta name="format-detection" content="telephone=yes">
+    
+    <!-- ============================================
+         FAVICON & ICONS
+         ============================================ -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    <link rel="apple-touch-icon" href="/static/laith-photo-nobg.png">
+    
+    <!-- ============================================
+         STRUCTURED DATA (JSON-LD)
+         ============================================ -->
+    <script type="application/ld+json">
+    ${JSON.stringify(seo.structuredData, null, 2)}
+    </script>
+    
+    <!-- Additional Structured Data: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Laith Mimi Portfolio",
+      "url": "${seo.siteUrl}",
+      "description": "${seo.description}",
+      "author": {
+        "@type": "Person",
+        "name": "Laith Mimi"
+      }
+    }
+    </script>
+    
+    <!-- Additional Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "${seo.siteUrl}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Projects",
+          "item": "${seo.siteUrl}#projects"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Contact",
+          "item": "${seo.siteUrl}#contact"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- ============================================
+         PERFORMANCE & PRELOADING
+         ============================================ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS -->
@@ -2010,13 +2165,124 @@ app.get('/', (c) => {
 </html>`)
 })
 
-// API routes for potential future features
+// ============================================================================
+// SEO ROUTES
+// ============================================================================
+
+// Sitemap XML for search engines
+app.get('/sitemap.xml', (c) => {
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://laith-mimi-portfolio.pages.dev/</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://laith-mimi-portfolio.pages.dev/#about</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://laith-mimi-portfolio.pages.dev/#projects</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://laith-mimi-portfolio.pages.dev/#skills</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://laith-mimi-portfolio.pages.dev/#experience</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://laith-mimi-portfolio.pages.dev/#contact</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>`
+  
+  return new Response(sitemap, {
+    headers: {
+      'Content-Type': 'application/xml',
+      'Cache-Control': 'public, max-age=86400'
+    }
+  })
+})
+
+// Robots.txt for search engines
+app.get('/robots.txt', (c) => {
+  const robots = `# Robots.txt for Laith Mimi Portfolio
+# https://laith-mimi-portfolio.pages.dev
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://laith-mimi-portfolio.pages.dev/sitemap.xml
+
+# Crawl delay (optional, be nice to servers)
+Crawl-delay: 1
+
+# Block specific paths if needed
+Disallow: /api/
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+`
+  
+  return new Response(robots, {
+    headers: {
+      'Content-Type': 'text/plain',
+      'Cache-Control': 'public, max-age=86400'
+    }
+  })
+})
+
+// API routes
 app.get('/api/contact', (c) => {
   return c.json({
     email: 'Laithmimi03@gmail.com',
     phone: '054-3600249',
     linkedin: 'https://linkedin.com/in/laithmimi',
     github: 'https://github.com/laithmimi'
+  })
+})
+
+// Health check for monitoring
+app.get('/api/health', (c) => {
+  return c.json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    version: '1.0.0'
   })
 })
 
