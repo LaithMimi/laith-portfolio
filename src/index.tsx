@@ -6,6 +6,13 @@ const app = new Hono()
 // Serve static files
 app.use('/static/*', serveStatic({ root: './public' }))
 
+// Google Search Console verification
+app.get('/googled00677178c1e649e.html', (c) => {
+  return new Response('google-site-verification: googled00677178c1e649e.html', {
+    headers: { 'Content-Type': 'text/html' }
+  })
+})
+
 // ============================================================================
 // BRAND CONCEPT
 // ============================================================================
