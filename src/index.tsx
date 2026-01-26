@@ -61,11 +61,11 @@ app.get('/googled00677178c1e649e.html', (c) => {
 // SEO + SOCIAL (ENHANCED)
 // ============================================================================
 const seo = {
-  // Primary SEO
-  title: "Laith Mimi | Software Engineer & AI Builder | EdTech Founder",
-  description: "Laith Mimi is a Software Engineering student and Founder of Quest Solutions, specializing in Agentic AI, RAG systems, and full-stack development. Building educational technology that transforms how students learn with AI-powered tools like GeeksHub.",
-  ogDescription: "Meet Laith Mimi — Software Engineer building AI-powered educational tools that learn with you. Founder of Quest Solutions, creator of GeeksHub, and passionate about making education smarter through technology.",
-  keywords: "Laith Mimi, Software Engineer, AI Developer, Full Stack Developer, Educational Technology, EdTech, RAG, LangChain, React, Python, FastAPI, Quest Solutions, GeeksHub, Agentic AI, Machine Learning, Jerusalem, Israel, Azrieli College, SaaS, Startup Founder",
+  // Primary SEO - OPTIMIZED FOR "Laith Mimi" SEARCH RANKING
+  title: "Laith Mimi - Software Engineer & AI Developer | Portfolio",
+  description: "Laith Mimi - Software Engineer specializing in Agentic AI, full-stack development, and educational technology. Founder of Quest Solutions. View Laith Mimi's portfolio, projects, and experience.",
+  ogDescription: "Laith Mimi's official portfolio - Software Engineer and AI Developer building educational technology. Founder of Quest Solutions, creator of GeeksHub. Connect with Laith Mimi.",
+  keywords: "Laith Mimi, Laith Mimi portfolio, Laith Mimi software engineer, Laith Mimi AI, Laith Mimi developer, Laith Mimi Quest Solutions, Laith Mimi GeeksHub, Laith Mimi Jerusalem, Laith Mimi Azrieli, Software Engineer Israel, AI Developer, Full Stack Developer, Educational Technology, EdTech, RAG, LangChain, React, Python, FastAPI, Agentic AI",
   
   // Additional SEO data
   author: "Laith Mimi",
@@ -73,15 +73,24 @@ const seo = {
   twitterHandle: "@laithmimi",
   locale: "en_US",
   
-  // Structured Data (JSON-LD)
+  // Structured Data (JSON-LD) - ENHANCED FOR PERSONAL BRAND
   structuredData: {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://laith-mimi-portfolio.pages.dev/#person",
     "name": "Laith Mimi",
+    "givenName": "Laith",
+    "familyName": "Mimi",
+    "alternateName": ["Laith", "ليث ميمي"],
     "url": "https://laith-mimi-portfolio.pages.dev",
-    "image": "https://laith-mimi-portfolio.pages.dev/static/laith-photo-nobg.png",
-    "jobTitle": "Software Engineer & AI Builder",
-    "description": "Software Engineering student and Founder of Quest Solutions, specializing in Agentic AI and educational technology.",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://laith-mimi-portfolio.pages.dev/static/laith-photo-nobg.png",
+      "width": 1024,
+      "height": 1024
+    },
+    "jobTitle": "Software Engineer & AI Developer",
+    "description": "Laith Mimi is a Software Engineering student and Founder of Quest Solutions, specializing in Agentic AI, RAG systems, and educational technology.",
     "email": "Laithmimi03@gmail.com",
     "telephone": "+972-54-3600249",
     "address": {
@@ -89,21 +98,53 @@ const seo = {
       "addressLocality": "Jerusalem",
       "addressCountry": "Israel"
     },
+    "nationality": {
+      "@type": "Country",
+      "name": "Israel"
+    },
     "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "Azrieli College of Engineering",
-      "url": "https://www.jce.ac.il"
+      "@type": "CollegeOrUniversity",
+      "name": "Azrieli College of Engineering Jerusalem",
+      "url": "https://www.jce.ac.il",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jerusalem",
+        "addressCountry": "Israel"
+      }
     },
     "worksFor": {
       "@type": "Organization",
       "name": "Quest Solutions",
-      "description": "SaaS agency focused on educational technology"
+      "description": "SaaS agency focused on educational technology",
+      "founder": {
+        "@type": "Person",
+        "name": "Laith Mimi"
+      }
     },
-    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "RAG Systems", "Full Stack Development", "React", "Python", "Educational Technology", "LangChain", "FastAPI"],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Software Engineer",
+      "occupationLocation": {
+        "@type": "City",
+        "name": "Jerusalem"
+      },
+      "skills": "AI Development, Full-Stack Development, React, Python, LangChain, RAG Systems"
+    },
+    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "RAG Systems", "LangChain", "Full Stack Development", "React", "Python", "TypeScript", "Educational Technology", "FastAPI", "Firebase", "Prompt Engineering"],
+    "knowsLanguage": [
+      {"@type": "Language", "name": "Arabic", "alternateName": "ar"},
+      {"@type": "Language", "name": "English", "alternateName": "en"},
+      {"@type": "Language", "name": "Hebrew", "alternateName": "he"}
+    ],
     "sameAs": [
       "https://linkedin.com/in/laithmimi",
-      "https://github.com/laithmimi"
-    ]
+      "https://github.com/laithmimi",
+      "https://github.com/LaithMimi"
+    ],
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://laith-mimi-portfolio.pages.dev"
+    }
   }
 }
 
@@ -273,18 +314,98 @@ app.get('/', (c) => {
     ${JSON.stringify(seo.structuredData, null, 2)}
     </script>
     
-    <!-- Additional Structured Data: WebSite -->
+    <!-- Additional Structured Data: WebSite with SearchAction -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Laith Mimi Portfolio",
+      "@id": "${seo.siteUrl}/#website",
+      "name": "Laith Mimi - Official Portfolio",
+      "alternateName": ["Laith Mimi Portfolio", "Laith Mimi", "ليث ميمي"],
       "url": "${seo.siteUrl}",
       "description": "${seo.description}",
+      "inLanguage": "en-US",
       "author": {
         "@type": "Person",
+        "@id": "${seo.siteUrl}/#person",
         "name": "Laith Mimi"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Laith Mimi"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "${seo.siteUrl}/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
+    }
+    </script>
+    
+    <!-- Structured Data: ProfilePage (Google's new type for personal profiles) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "@id": "${seo.siteUrl}/#profilepage",
+      "name": "Laith Mimi - Software Engineer Portfolio",
+      "description": "Official portfolio and profile page of Laith Mimi, Software Engineer and AI Developer",
+      "mainEntity": {
+        "@type": "Person",
+        "@id": "${seo.siteUrl}/#person",
+        "name": "Laith Mimi"
+      },
+      "dateCreated": "2025-11-01",
+      "dateModified": "${new Date().toISOString().split('T')[0]}"
+    }
+    </script>
+    
+    <!-- Structured Data: ItemList for Projects -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Laith Mimi's Projects",
+      "description": "Portfolio projects by Laith Mimi - Software Engineer & AI Developer",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "GeeksHub",
+            "description": "AI-powered educational platform centralizing university resources with RAG-based assistant",
+            "applicationCategory": "EducationalApplication",
+            "author": {"@type": "Person", "name": "Laith Mimi"},
+            "operatingSystem": "Web"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Arabic Chatbot AI Tutor",
+            "description": "RAG-based conversational Arabic language learning tutor",
+            "applicationCategory": "EducationalApplication",
+            "author": {"@type": "Person", "name": "Laith Mimi"},
+            "operatingSystem": "Web"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "NGO Social Platform",
+            "description": "Social platform for community engagement and volunteer coordination",
+            "applicationCategory": "SocialNetworkingApplication",
+            "author": {"@type": "Person", "name": "Laith Mimi"},
+            "operatingSystem": "Web"
+          }
+        }
+      ]
     }
     </script>
     
@@ -297,7 +418,7 @@ app.get('/', (c) => {
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Home",
+          "name": "Laith Mimi",
           "item": "${seo.siteUrl}"
         },
         {
@@ -1067,12 +1188,17 @@ app.get('/', (c) => {
                         <span class="text-sm text-gray-300">Open to opportunities</span>
                     </div>
                     
-                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight reveal reveal-up" style="transition-delay: 0.2s;">
+                    <!-- SEO-optimized H1 with name prominent -->
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-4 leading-tight reveal reveal-up" style="transition-delay: 0.2s;">
+                        <span class="block text-2xl md:text-3xl lg:text-4xl text-gray-300 font-bold mb-2" itemscope itemtype="https://schema.org/Person">
+                            <span itemprop="name">Laith Mimi</span>
+                        </span>
                         I build <span class="gradient-text neon-glow" data-text="AI that teaches.">AI that teaches.</span>
                     </h1>
                     
                     <p class="text-xl md:text-2xl text-gray-400 mb-8 reveal reveal-up" style="transition-delay: 0.4s;">
-                        Founder. Full-stack developer. Obsessed with making education smarter.<span class="typing-cursor"></span>
+                        <span itemprop="jobTitle">Software Engineer</span> • Founder • Full-stack Developer<br class="hidden sm:inline">
+                        <span class="text-lg">Obsessed with making education smarter through AI.</span><span class="typing-cursor"></span>
                     </p>
                     
                     <div class="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4 reveal reveal-up" style="transition-delay: 0.6s;">
@@ -1632,26 +1758,33 @@ app.get('/', (c) => {
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-8 px-6 border-t border-white/10">
+    <!-- Footer - SEO optimized with structured data -->
+    <footer class="py-8 px-6 border-t border-white/10" itemscope itemtype="https://schema.org/Person">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-            <p class="text-gray-500 text-sm">
-                © 2025 Laith Mimi. Built with 
-                <i class="fas fa-heart text-red-500"></i> 
-                and lots of coffee.
-            </p>
+            <div class="text-gray-500 text-sm text-center md:text-left">
+                <p>
+                    © 2025 <span itemprop="name" class="text-gray-400 font-medium">Laith Mimi</span> • 
+                    <span itemprop="jobTitle">Software Engineer & AI Developer</span>
+                </p>
+                <p class="text-xs mt-1">
+                    Built with <i class="fas fa-heart text-red-500"></i> in <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><span itemprop="addressLocality">Jerusalem</span>, <span itemprop="addressCountry">Israel</span></span>
+                </p>
+            </div>
             <div class="flex items-center gap-6">
-                <a href="https://linkedin.com/in/laithmimi" target="_blank" class="text-gray-500 hover:text-white transition-colors">
+                <a href="https://linkedin.com/in/laithmimi" target="_blank" rel="noopener" itemprop="sameAs" class="text-gray-500 hover:text-white transition-colors" aria-label="Laith Mimi on LinkedIn">
                     <i class="fab fa-linkedin text-xl"></i>
                 </a>
-                <a href="https://github.com/laithmimi" target="_blank" class="text-gray-500 hover:text-white transition-colors">
+                <a href="https://github.com/laithmimi" target="_blank" rel="noopener" itemprop="sameAs" class="text-gray-500 hover:text-white transition-colors" aria-label="Laith Mimi on GitHub">
                     <i class="fab fa-github text-xl"></i>
                 </a>
-                <a href="mailto:Laithmimi03@gmail.com" class="text-gray-500 hover:text-white transition-colors">
+                <a href="mailto:Laithmimi03@gmail.com" itemprop="email" class="text-gray-500 hover:text-white transition-colors" aria-label="Email Laith Mimi">
                     <i class="fas fa-envelope text-xl"></i>
                 </a>
             </div>
         </div>
+        <!-- Hidden SEO text for crawlers -->
+        <meta itemprop="url" content="https://laith-mimi-portfolio.pages.dev">
+        <meta itemprop="image" content="https://laith-mimi-portfolio.pages.dev/static/laith-photo-nobg.png">
     </footer>
 
     <!-- Project Modals -->
