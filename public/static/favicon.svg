@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><!-- colours mirror --color-bg / --color-accent (static asset: CSS variables unavailable) --><rect width="64" height="64" rx="14" fill="#111111"/><text x="32" y="43" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="30" fill="#7AF298">LM</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- LM monogram. Colours mirror the color-bg (#111111) and color-accent (#7AF298) tokens; a static asset cannot read CSS variables. -->
+  <rect width="64" height="64" rx="14" fill="#111111"/>
+  <g fill="#7AF298">
+    <path d="M11.5 15H18V41.5H27.5V48H11.5Z"/>
+    <path d="M31 15H37.6L42 26.4L46.4 15H53V48H46.5V30.5L44.6 35.6H39.4L37.5 30.5V48H31Z"/>
+  </g>
+</svg>

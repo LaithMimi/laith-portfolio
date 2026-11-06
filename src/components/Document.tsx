@@ -81,7 +81,8 @@ export function Document(props: {
           <meta name="color-scheme" content="dark" />
           <meta name="format-detection" content="telephone=yes" />
           <link rel="icon" href="/static/favicon.svg" type="image/svg+xml" />
-          <link rel="apple-touch-icon" href={seo.personImage.path} />
+          <link rel="icon" href="/static/favicon-32.png" sizes="32x32" type="image/png" />
+          <link rel="apple-touch-icon" href="/static/apple-touch-icon.png" />
 
           <link rel="preload" href="/static/fonts/space-grotesk-latin-var.woff2" as="font" type="font/woff2" crossorigin="" />
           {locale === 'ar' ? (
