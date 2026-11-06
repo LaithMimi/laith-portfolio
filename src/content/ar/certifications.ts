@@ -1,4 +1,4 @@
-// DRAFT — Arabic translation of src/content/en/certifications.ts. Needs Laith's approval before launch.
+// Arabic translation of src/content/en/certifications.ts, approved by Laith (2026-11-06).
 import type { Certification } from '../types'
 
 export const certifications: Certification[] = [

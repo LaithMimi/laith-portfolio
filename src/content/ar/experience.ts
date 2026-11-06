@@ -1,4 +1,4 @@
-// DRAFT — Arabic translation of src/content/en/experience.ts. Needs Laith's approval before launch.
+// Arabic translation of src/content/en/experience.ts, approved by Laith (2026-11-06).
 import type { ExperienceEntry } from '../types'
 
 export const experience: ExperienceEntry[] = [

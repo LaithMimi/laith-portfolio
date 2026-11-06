@@ -1,4 +1,3 @@
-import { TBD } from '../tbd'
 import type { Project } from '../types'
 
 // Migrated from the previous site's project cards and case-study modals.
@@ -19,7 +18,6 @@ export const projects: Project[] = [
         'GeeksHub centralizes all academic resources into one intelligent hub. An AI assistant (powered by RAG workflows) answers questions using course-specific context. Gamification elements keep students engaged and motivated through their academic journey.',
       impact: [
         'Reduced material search time from hours to seconds. Students report clearer study sessions and less pre-exam panic.',
-        TBD('metrics as the product scales'),
       ],
       stack: ['React', 'Python', 'FastAPI', 'RAG Workflows', 'Vector DB'],
       features: [
@@ -46,7 +44,6 @@ export const projects: Project[] = [
         "Built a RAG-based conversational tutor that adapts to each learner's level. The chatbot retrieves relevant grammar rules and vocabulary, then explains concepts through natural dialogue. Firebase handles user progress; Pinecone powers semantic search across Arabic learning materials.",
       impact: [
         'Learners practice Arabic conversation without judgment or scheduling constraints. Personalized explanations help concepts stick.',
-        TBD('user growth metrics'),
       ],
       stack: ['React', 'Python', 'Firebase', 'Pinecone', 'RAG'],
       features: [
@@ -73,7 +70,6 @@ export const projects: Project[] = [
         'Designed and built a social platform with community features — event announcements, member profiles, discussion threads — alongside a compelling landing page that converts visitors into volunteers. Firebase powers real-time interactions.',
       impact: [
         'Improved clarity and accessibility for community engagement. Reduced friction between interest and action for potential volunteers.',
-        TBD('engagement metrics'),
       ],
       stack: ['React', 'Firebase', 'Responsive Design'],
       features: [
@@ -95,7 +91,8 @@ export const projects: Project[] = [
     links: { live: 'https://pep-club.vercel.app/ar' },
     caseStudy: {
       tagline: 'Peptides from trusted brands, in one place',
-      problem: TBD('the problem Pep Club solves and who it was built for'),
+      problem:
+        'Customers needed one place to browse research peptides by brand and category in Arabic or English, and to order without paying online.',
       solution:
         'A bilingual storefront in Arabic and English where customers browse the catalog by brand and category, filter by price, add products to a cart and order online with cash on delivery.',
       impact: [],

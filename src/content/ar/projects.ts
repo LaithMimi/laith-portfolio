@@ -1,6 +1,5 @@
-// DRAFT — Arabic translation of src/content/en/projects.ts. Needs Laith's approval before launch.
+// Arabic translation of src/content/en/projects.ts, approved by Laith (2026-11-06).
 // Slugs, tags, stack and links are shared with English (case-study anchors stay identical).
-import { TBD } from '../tbd'
 import type { Project } from '../types'
 import { projects as en } from '../en/projects'
 
@@ -24,7 +23,6 @@ export const projects: Project[] = [
         'يجمع GeeksHub كل المصادر الأكاديمية في مركز ذكي واحد. يجيب مساعد ذكاء اصطناعي (مبني على RAG) عن الأسئلة اعتماداً على محتوى المساق نفسه، وتحافظ عناصر التلعيب على حماس الطلاب طوال مسيرتهم.',
       impact: [
         'تقلّص وقت البحث عن المواد من ساعات إلى ثوانٍ، ويصف الطلاب جلسات دراسة أوضح وقلقاً أقل قبل الامتحانات.',
-        TBD('metrics as the product scales'),
       ],
       features: [
         'لوحة تحكّم تجمع مواد المساقات في مكان واحد',
@@ -48,7 +46,6 @@ export const projects: Project[] = [
         'بنيت معلّماً حوارياً مبنياً على RAG يتكيّف مع مستوى كل متعلّم: يسترجع قواعد النحو والمفردات المناسبة ثم يشرحها في حوار طبيعي. يحفظ Firebase تقدّم المستخدم، ويشغّل Pinecone البحث الدلالي في مواد تعلّم العربية.',
       impact: [
         'يتدرّب المتعلّمون على المحادثة بالعربية دون إحراج أو قيود مواعيد، وتساعد الشروح المخصّصة على ترسيخ المفاهيم.',
-        TBD('user growth metrics'),
       ],
       features: [
         'واجهة محادثة تعرض النص العربي بشكل صحيح',
@@ -72,7 +69,6 @@ export const projects: Project[] = [
         'صمّمت وبنيت منصة اجتماعية بميزات مجتمعية — إعلانات فعاليات، وملفات أعضاء، ونقاشات — مع صفحة هبوط مقنعة تحوّل الزوار إلى متطوّعين. يشغّل Firebase التفاعل اللحظي.',
       impact: [
         'تواصل مجتمعي أوضح وأسهل وصولاً، ومسافة أقصر بين الاهتمام والمشاركة لدى المتطوّعين المحتملين.',
-        TBD('engagement metrics'),
       ],
       features: [
         'صفحة هبوط بعرض قيمة واضح',
@@ -89,7 +85,8 @@ export const projects: Project[] = [
     caseStudy: {
       ...base('pep-club').caseStudy,
       tagline: 'ببتيدات موثوقة، في مكان واحد',
-      problem: TBD('the problem Pep Club solves and who it was built for'),
+      problem:
+        'احتاج الزبائن إلى مكان واحد يتصفّحون فيه ببتيدات الأبحاث حسب العلامة التجارية والفئة بالعربية أو الإنجليزية، ويطلبونها دون دفع إلكتروني.',
       solution:
         'متجر ثنائي اللغة بالعربية والإنجليزية يتصفّح فيه الزبائن المنتجات حسب العلامة التجارية والفئة، ويصفّونها حسب السعر، ويضيفونها إلى السلة ويطلبونها عبر الإنترنت مع الدفع عند الاستلام.',
       features: [

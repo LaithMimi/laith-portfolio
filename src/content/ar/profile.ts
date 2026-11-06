@@ -1,4 +1,4 @@
-// DRAFT — Arabic translation of src/content/en/profile.ts. Needs Laith's approval before launch.
+// Arabic translation of src/content/en/profile.ts, approved by Laith (2026-11-06).
 import type { Profile } from '../types'
 import { profile as en } from '../en/profile'
 

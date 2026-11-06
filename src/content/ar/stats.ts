@@ -1,4 +1,4 @@
-// DRAFT — Arabic translation of src/content/en/stats.ts. Needs Laith's approval before launch.
+// Arabic translation of src/content/en/stats.ts, approved by Laith (2026-11-06).
 import type { Stat } from '../types'
 
 export const stats: Stat[] = [

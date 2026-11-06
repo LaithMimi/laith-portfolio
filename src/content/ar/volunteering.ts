@@ -1,4 +1,4 @@
-// DRAFT — Arabic translation of src/content/en/volunteering.ts. Needs Laith's approval before launch.
+// Arabic translation of src/content/en/volunteering.ts, approved by Laith (2026-11-06).
 import type { VolunteeringEntry } from '../types'
 
 export const volunteering: VolunteeringEntry[] = [

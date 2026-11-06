@@ -1,4 +1,4 @@
-// DRAFT — Arabic translation of src/content/en/services.ts. Needs Laith's approval before launch.
+// Arabic translation of src/content/en/services.ts, approved by Laith (2026-11-06).
 import type { Service } from '../types'
 
 export const services: [Service, Service, Service, Service] = [

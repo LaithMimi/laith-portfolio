@@ -1,4 +1,4 @@
-// DRAFT — Arabic translation of src/content/en/process.ts. Needs Laith's approval before launch.
+// Arabic translation of src/content/en/process.ts, approved by Laith (2026-11-06).
 import type { ProcessStep } from '../types'
 
 export const processSteps: [ProcessStep, ProcessStep, ProcessStep] = [

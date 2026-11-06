@@ -1,5 +1,5 @@
 // Interface strings per locale. Content lives in src/content/<locale>/.
-// Arabic strings are a DRAFT translation — Laith approves them with the Arabic content before launch.
+// Arabic strings: translation approved by Laith (2026-11-06).
 import type { Locale } from '../content'
 
 const pad = (n: number) => String(n).padStart(2, '0')

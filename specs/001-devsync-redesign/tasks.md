@@ -282,7 +282,7 @@ description: "Task list for the DevSync-style portfolio redesign"
 
 - [ ] T061 [P] Laith supplies, and the agent enters, the hero greeting, role and intro in `src/content/profile.ts` ("role ≤ 60 characters", "intro 2–3 sentences, ≤ 320 characters") (Proda: Write the hero and intro copy)
 - [ ] T062 [P] Laith reviews and updates `src/content/skills.ts` groups (Proda: Update the skill groups)
-- [ ] T063 [P] Laith supplies project copy and 16:10 thumbnails. Convert the thumbnails to `public/static/projects/{slug}.webp` (one-off `npx sharp-cli`, about 1200px wide) and set `thumbnail` with width, height and alt in `src/content/projects.ts`. Replace the case-study `TBD`s (Proda: Prepare project content and thumbnails)
+- [X] T063 [P] Laith supplies project copy and 16:10 thumbnails. Convert the thumbnails to `public/static/projects/{slug}.webp` (one-off `npx sharp-cli`, about 1200px wide) and set `thumbnail` with width, height and alt in `src/content/projects.ts`. Replace the case-study `TBD`s (Proda: Prepare project content and thumbnails)
 - [X] T064 [P] Laith supplies the 4 services and 3 process steps. Enter them in `src/content/services.ts` and `src/content/process.ts` (Proda: Write the services and process steps)
 - [X] T065 [P] Laith reviews `src/content/experience.ts`, `certifications.ts` and `volunteering.ts` (Proda: Update experience, certifications and volunteering)
 - [ ] T066 [P] Laith supplies real testimonials (or confirms skipping them). Enter them in `src/content/testimonials.ts` (Proda: Collect testimonials)
@@ -444,7 +444,7 @@ The roadmap is https://proda.work/projects/ad3b4bcc-869a-468a-917b-9c5c0cf8fb80.
 - [X] T086 1200×630 social cards `public/static/og-en.png` / `og-ar.png` from the dev route `/__og/:locale` (`.impeccable/build/og.cjs`)
 - [X] T087 404 page with `noindex`; fix the `serveStatic` typing error in `src/index.tsx`
 - [X] T088 Constitution PATCH 1.0.1: one page per locale (`.specify/memory/constitution.md`)
-- [ ] T089 Laith approves the Arabic draft copy in `src/content/ar/*` and `src/i18n/ui.ts`
+- [X] T089 Laith approves the Arabic draft copy in `src/content/ar/*` and `src/i18n/ui.ts`
 - [ ] T090 Record the Search Console baseline before launch (Laith's login)
 - [ ] T091 After deploy: resubmit the sitemap, inspect `/ar`, run the Rich Results Test, check the OG previews
 - [ ] T092 Authority: link the site from LinkedIn, GitHub, WeGrw, Datahack, Station J and Quest (Laith)

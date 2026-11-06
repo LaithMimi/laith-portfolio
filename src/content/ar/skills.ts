@@ -1,4 +1,4 @@
-// DRAFT — Arabic translation of src/content/en/skills.ts. Needs Laith's approval before launch.
+// Arabic translation of src/content/en/skills.ts, approved by Laith (2026-11-06).
 // Skill names stay in English (they are the terms people search for); tooltips are translated.
 import type { SkillGroup } from '../types'
 
