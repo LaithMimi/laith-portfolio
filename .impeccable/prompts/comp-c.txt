@@ -1,0 +1,9 @@
+A desktop web landing page for the personal portfolio of Laith Mimi, a software engineer who builds AI that helps people learn. Rendered edge to edge at desktop width, crisp readable text, no browser window, device or desk.
+
+The visitor is a recruiter scanning for who he is, what he built, and how to reach him.
+
+What leads: an index of his work set at monumental scale. The name LAITH MIMI runs vertically up the left edge in huge mint uppercase. The rest of the screen is a numbered list of three projects in large white type, each a full-width row divided by thin grey rules: "01 GeeksHub — AI study hub for university students", "02 Arabic AI Tutor — a RAG tutor that adapts to each learner", "03 NGO Social Platform — turning visitors into volunteers", each with small mint pill tags and an arrow. His portrait (the man in the second reference image, green polo, cut out) stands at right, overlapping the rows, with a soft mint glow behind him. Above the list, a line: "Hey, I'm a Software Engineer & AI Developer. Founder of Quest Solutions." Bottom: "E Laithmimi03@gmail.com  T 054-3600249  / LinkedIn  / GitHub".
+
+Frame: top bar with "LAITH MIMI" at left, links Skills, Work, Services, Experience, Contact, and a mint "Start Project" pill.
+
+The first reference image is style inspiration only: near-black ground, mint #7AF298 accent, white grotesk type, mint </ and > glyphs framing thin grey rules. Adapt it into a real working page; do not copy its person, name, layout or text.

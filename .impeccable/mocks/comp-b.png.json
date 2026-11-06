@@ -1,0 +1,9 @@
+{
+  "prompt": "A desktop web landing page for the personal portfolio of Laith Mimi, a software engineer who builds AI that helps people learn. Rendered edge to edge at desktop width, crisp readable text, no browser window, device or desk.\n\nThe visitor is a recruiter: the page must show who he is and, immediately, the work that proves it.\n\nWhat leads: the work. The giant uppercase name LAITH MIMI in mint fills the top third, with his portrait (the man in the second reference image, green polo) cut out and standing at the right, his shoulders rising through the letters. Beneath, already inside the first screen, a section opens with the label \"// Explore Work\" and the heading \"AI that teaches, shipped\", followed by a large GeeksHub project card: \"GeeksHub — Where university chaos becomes organized learning\", pill tags React, Python, RAG, and an arrow \"Read case study\". The edges of two further cards, \"Arabic AI Tutor\" and \"NGO Social Platform\", peek to the right.\n\nAt left under the name: \"Hey, I'm a Software Engineer & AI Developer\" and \"E Laithmimi03@gmail.com  T 054-3600249\", with \"/ LinkedIn  / GitHub\".\n\nFrame: top bar with \"LAITH MIMI\" at left, links Skills, Work, Services, Experience, Contact, and a mint \"Start Project\" pill.\n\nThe first reference image is style inspiration only: near-black ground, mint accent, white grotesk type, giant mint name, thin grey rules framed by mint </ and > glyphs. Adapt it to a real working page; do not copy its person, name, layout or text.",
+  "tool": "higgsfield gpt_image_2_6 (quality high, 2k, 3:2)",
+  "references": [
+    ".impeccable/refs/devsync-hero.png",
+    "public/static/laith-photo-nobg.png"
+  ],
+  "createdAt": "2026-11-06T14:38:07.251Z"
+}

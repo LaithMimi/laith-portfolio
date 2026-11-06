@@ -1,0 +1,959 @@
+{
+  "tool": "comp-spec",
+  "version": 1,
+  "createdAt": "2026-11-06T14:39:56.020Z",
+  "comp": ".impeccable/mocks/comp-a.png",
+  "warnings": [
+    "region portrait: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)"
+  ],
+  "uncoveredInkCells": [
+    "F1",
+    "H1",
+    "J4",
+    "J5"
+  ],
+  "compSize": {
+    "width": 2048,
+    "height": 1360
+  },
+  "aspect": 1.5059,
+  "orientation": "landscape",
+  "palette": [
+    {
+      "hex": "#171819",
+      "coverage": 0.7181
+    },
+    {
+      "hex": "#87f89c",
+      "coverage": 0.1101
+    },
+    {
+      "hex": "#283e30",
+      "coverage": 0.0793
+    },
+    {
+      "hex": "#8eb7b5",
+      "coverage": 0.0692
+    },
+    {
+      "hex": "#46755b",
+      "coverage": 0.0232
+    }
+  ],
+  "bands": [
+    {
+      "y": 0.0235,
+      "strength": 0.2634
+    },
+    {
+      "y": 0.0471,
+      "strength": 0.3732
+    },
+    {
+      "y": 0.1294,
+      "strength": 0.5801
+    },
+    {
+      "y": 0.1529,
+      "strength": 0.3687
+    },
+    {
+      "y": 0.1765,
+      "strength": 1
+    },
+    {
+      "y": 0.3647,
+      "strength": 0.8307
+    },
+    {
+      "y": 0.4471,
+      "strength": 0.331
+    },
+    {
+      "y": 0.4824,
+      "strength": 0.3242
+    },
+    {
+      "y": 0.5176,
+      "strength": 0.2584
+    },
+    {
+      "y": 0.5647,
+      "strength": 0.4071
+    },
+    {
+      "y": 0.6,
+      "strength": 0.2817
+    },
+    {
+      "y": 0.8,
+      "strength": 0.2491
+    },
+    {
+      "y": 0.8235,
+      "strength": 0.2525
+    },
+    {
+      "y": 0.8588,
+      "strength": 0.4487
+    },
+    {
+      "y": 0.9412,
+      "strength": 0.3136
+    },
+    {
+      "y": 0.9647,
+      "strength": 0.367
+    }
+  ],
+  "regions": [
+    {
+      "id": "logo",
+      "kind": "text",
+      "note": "LAITH MIMI wordmark, white bold uppercase, top left",
+      "grid": null,
+      "box": {
+        "x": 0.0249,
+        "y": 0.0243,
+        "w": 0.1021,
+        "h": 0.0324
+      },
+      "px": {
+        "x": 51,
+        "y": 33,
+        "w": 209,
+        "h": 44
+      },
+      "aspect": 4.75,
+      "palette": [
+        {
+          "hex": "#171717",
+          "coverage": 0.6947
+        },
+        {
+          "hex": "#f6f6f6",
+          "coverage": 0.2309
+        },
+        {
+          "hex": "#4d4c4d",
+          "coverage": 0.042
+        },
+        {
+          "hex": "#b8b6b8",
+          "coverage": 0.02
+        },
+        {
+          "hex": "#898a8a",
+          "coverage": 0.0124
+        }
+      ],
+      "detail": {
+        "energy": 43.2835
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 9,
+          "capHeightPx": 25.8,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.6579,
+          "advTall": 0.6579,
+          "advX": null,
+          "gap": 0.1935,
+          "xRatio": 0.612,
+          "stemW": 0.2271,
+          "contrast": 1.1397,
+          "serif": 1.0114,
+          "densTall": 0.678,
+          "densX": null,
+          "weight": 0.678
+        },
+        "widthClass": "normal",
+        "weightClass": "black"
+      }
+    },
+    {
+      "id": "nav-links",
+      "kind": "control",
+      "note": "nav links Skills Work Services Experience Contact, white",
+      "grid": null,
+      "box": {
+        "x": 0.4736,
+        "y": 0.0184,
+        "w": 0.3809,
+        "h": 0.0412
+      },
+      "px": {
+        "x": 970,
+        "y": 25,
+        "w": 780,
+        "h": 56
+      },
+      "aspect": 13.9286,
+      "palette": [
+        {
+          "hex": "#171717",
+          "coverage": 0.9018
+        },
+        {
+          "hex": "#f4f4f4",
+          "coverage": 0.072
+        },
+        {
+          "hex": "#666666",
+          "coverage": 0.0106
+        },
+        {
+          "hex": "#404040",
+          "coverage": 0.0078
+        },
+        {
+          "hex": "#c0c0c0",
+          "coverage": 0.0078
+        }
+      ],
+      "detail": {
+        "energy": 44.7619
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "nav-cta",
+      "kind": "control",
+      "note": "mint pill button Start Project with arrow, dark text",
+      "grid": null,
+      "box": {
+        "x": 0.8569,
+        "y": 0.0103,
+        "w": 0.1343,
+        "h": 0.0618
+      },
+      "px": {
+        "x": 1755,
+        "y": 14,
+        "w": 275,
+        "h": 84
+      },
+      "aspect": 3.2738,
+      "palette": [
+        {
+          "hex": "#86f89d",
+          "coverage": 0.6126
+        },
+        {
+          "hex": "#151515",
+          "coverage": 0.3295
+        },
+        {
+          "hex": "#112212",
+          "coverage": 0.0445
+        },
+        {
+          "hex": "#60b673",
+          "coverage": 0.0087
+        },
+        {
+          "hex": "#8ce9a9",
+          "coverage": 0.0047
+        }
+      ],
+      "detail": {
+        "energy": 30.6341
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "greeting",
+      "kind": "text",
+      "note": "Hey, I'm a Software Engineer & AI Developer, white bold",
+      "grid": null,
+      "box": {
+        "x": 0.022,
+        "y": 0.1103,
+        "w": 0.5176,
+        "h": 0.05
+      },
+      "px": {
+        "x": 45,
+        "y": 150,
+        "w": 1060,
+        "h": 68
+      },
+      "aspect": 15.5882,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.7608
+        },
+        {
+          "hex": "#f6f6f6",
+          "coverage": 0.1977
+        },
+        {
+          "hex": "#454545",
+          "coverage": 0.016
+        },
+        {
+          "hex": "#b3b3b3",
+          "coverage": 0.0139
+        },
+        {
+          "hex": "#767676",
+          "coverage": 0.0115
+        }
+      ],
+      "detail": {
+        "energy": 97.801
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 35,
+          "capHeightPx": 33.7,
+          "inkIsDark": false,
+          "allCaps": true,
+          "advance": 0.7268,
+          "advTall": 0.5043,
+          "advX": null,
+          "gap": 0.1187,
+          "xRatio": null,
+          "stemW": 0.2402,
+          "contrast": 1.2036,
+          "serif": 0.9846,
+          "densTall": 0.6692,
+          "densX": null,
+          "weight": 0.6692
+        },
+        "widthClass": "condensed",
+        "weightClass": "black",
+        "chosen": {
+          "family": "MuseoModerno",
+          "weight": 700,
+          "fontSizePx": 47,
+          "source": "index",
+          "fp": {
+            "lines": 1,
+            "glyphs": 39,
+            "capHeightPx": 33.5,
+            "inkIsDark": true,
+            "allCaps": true,
+            "advance": 0.7164,
+            "advTall": 0.7164,
+            "advX": null,
+            "gap": 0.1493,
+            "xRatio": null,
+            "stemW": 0.2379,
+            "contrast": 1.2027,
+            "serif": null,
+            "densTall": 0.6517,
+            "densX": null,
+            "weight": 0.6517
+          },
+          "stamp": "ac4e22bd1c73"
+        }
+      }
+    },
+    {
+      "id": "name",
+      "kind": "text",
+      "note": "LAITH MIMI giant mint uppercase display slab, the h1",
+      "grid": null,
+      "box": {
+        "x": 0.0195,
+        "y": 0.1676,
+        "w": 0.9595,
+        "h": 0.2096
+      },
+      "px": {
+        "x": 40,
+        "y": 228,
+        "w": 1965,
+        "h": 285
+      },
+      "aspect": 6.8947,
+      "palette": [
+        {
+          "hex": "#87f89c",
+          "coverage": 0.4945
+        },
+        {
+          "hex": "#171919",
+          "coverage": 0.3889
+        },
+        {
+          "hex": "#223627",
+          "coverage": 0.0846
+        },
+        {
+          "hex": "#385e47",
+          "coverage": 0.0173
+        },
+        {
+          "hex": "#b68171",
+          "coverage": 0.0147
+        }
+      ],
+      "detail": {
+        "energy": 58.7055
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": null,
+        "measuredAt": "2026-11-06T14:39:56.193Z",
+        "note": "no separable lettering in the crop; size by the region box"
+      }
+    },
+    {
+      "id": "glow",
+      "kind": "chrome",
+      "note": "soft radial mint glow behind the portrait",
+      "grid": null,
+      "box": {
+        "x": 0.2734,
+        "y": 0.3728,
+        "w": 0.3906,
+        "h": 0.5
+      },
+      "px": {
+        "x": 560,
+        "y": 507,
+        "w": 800,
+        "h": 680
+      },
+      "aspect": 1.1765,
+      "palette": [
+        {
+          "hex": "#8eb7b5",
+          "coverage": 0.3886
+        },
+        {
+          "hex": "#202c27",
+          "coverage": 0.2633
+        },
+        {
+          "hex": "#345444",
+          "coverage": 0.1795
+        },
+        {
+          "hex": "#477c5d",
+          "coverage": 0.0849
+        },
+        {
+          "hex": "#b8866f",
+          "coverage": 0.0837
+        }
+      ],
+      "detail": {
+        "energy": 14.6178
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "portrait",
+      "kind": "image",
+      "note": "real photo of Laith in a green polo, transparent cutout, centred over the name; cropped at the bottom by the ticker band",
+      "grid": null,
+      "bleed": true,
+      "box": {
+        "x": 0.3369,
+        "y": 0.2206,
+        "w": 0.3223,
+        "h": 0.7088
+      },
+      "px": {
+        "x": 690,
+        "y": 300,
+        "w": 660,
+        "h": 964
+      },
+      "aspect": 0.6846,
+      "palette": [
+        {
+          "hex": "#8eb7b5",
+          "coverage": 0.3672
+        },
+        {
+          "hex": "#1a2023",
+          "coverage": 0.2484
+        },
+        {
+          "hex": "#314b3b",
+          "coverage": 0.1851
+        },
+        {
+          "hex": "#87f8a1",
+          "coverage": 0.1028
+        },
+        {
+          "hex": "#b8856f",
+          "coverage": 0.0965
+        }
+      ],
+      "detail": {
+        "energy": 16.0835
+      },
+      "medium": "raster",
+      "plate": "assets/plates/portrait.png",
+      "text": null
+    },
+    {
+      "id": "intro",
+      "kind": "text",
+      "note": "intro paragraph, white, right column",
+      "grid": null,
+      "box": {
+        "x": 0.6733,
+        "y": 0.4397,
+        "w": 0.2573,
+        "h": 0.1993
+      },
+      "px": {
+        "x": 1379,
+        "y": 598,
+        "w": 527,
+        "h": 271
+      },
+      "aspect": 1.9446,
+      "palette": [
+        {
+          "hex": "#171818",
+          "coverage": 0.7953
+        },
+        {
+          "hex": "#f6f6f6",
+          "coverage": 0.1494
+        },
+        {
+          "hex": "#192919",
+          "coverage": 0.025
+        },
+        {
+          "hex": "#3e3f3f",
+          "coverage": 0.0152
+        },
+        {
+          "hex": "#676868",
+          "coverage": 0.0151
+        }
+      ],
+      "detail": {
+        "energy": 78.5413
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 5,
+          "glyphs": 120,
+          "capHeightPx": 24.6,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.6863,
+          "advTall": 0.4874,
+          "advX": 0.6904,
+          "gap": 0.1214,
+          "xRatio": 0.7403,
+          "stemW": 0.2049,
+          "contrast": 1.161,
+          "serif": 0.7385,
+          "densTall": 0.5703,
+          "densX": 0.6235,
+          "weight": 0.5703
+        },
+        "widthClass": "normal",
+        "weightClass": "bold"
+      }
+    },
+    {
+      "id": "scroll",
+      "kind": "chrome",
+      "note": "vertical SCROLL label with thin mint rule on the right edge",
+      "grid": null,
+      "box": {
+        "x": 0.9644,
+        "y": 0.4154,
+        "w": 0.0293,
+        "h": 0.1801
+      },
+      "px": {
+        "x": 1975,
+        "y": 565,
+        "w": 60,
+        "h": 245
+      },
+      "aspect": 0.2449,
+      "palette": [
+        {
+          "hex": "#181818",
+          "coverage": 0.9156
+        },
+        {
+          "hex": "#f7f7f7",
+          "coverage": 0.0388
+        },
+        {
+          "hex": "#488661",
+          "coverage": 0.0216
+        },
+        {
+          "hex": "#0a2717",
+          "coverage": 0.0135
+        },
+        {
+          "hex": "#c1c2c3",
+          "coverage": 0.0105
+        }
+      ],
+      "detail": {
+        "energy": 5.772
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "email",
+      "kind": "text",
+      "note": "E Laithmimi03@gmail.com contact row",
+      "grid": null,
+      "box": {
+        "x": 0.0239,
+        "y": 0.7949,
+        "w": 0.2134,
+        "h": 0.0346
+      },
+      "px": {
+        "x": 49,
+        "y": 1081,
+        "w": 437,
+        "h": 47
+      },
+      "aspect": 9.2979,
+      "palette": [
+        {
+          "hex": "#171717",
+          "coverage": 0.7453
+        },
+        {
+          "hex": "#f6f6f6",
+          "coverage": 0.1598
+        },
+        {
+          "hex": "#505151",
+          "coverage": 0.058
+        },
+        {
+          "hex": "#a0a0a1",
+          "coverage": 0.0299
+        },
+        {
+          "hex": "#747376",
+          "coverage": 0.0069
+        }
+      ],
+      "detail": {
+        "energy": 86.8451
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 21,
+          "capHeightPx": 23.8,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.6827,
+          "advTall": 0.3571,
+          "advX": 0.9138,
+          "gap": 0.126,
+          "xRatio": 0.7451,
+          "stemW": 0.2165,
+          "contrast": 1.1692,
+          "serif": 0.8908,
+          "densTall": 0.7038,
+          "densX": 0.6486,
+          "weight": 0.7038
+        },
+        "widthClass": "wide",
+        "weightClass": "black"
+      }
+    },
+    {
+      "id": "phone",
+      "kind": "text",
+      "note": "T 054-3600249 contact row",
+      "grid": null,
+      "box": {
+        "x": 0.0239,
+        "y": 0.8375,
+        "w": 0.1323,
+        "h": 0.0346
+      },
+      "px": {
+        "x": 49,
+        "y": 1139,
+        "w": 271,
+        "h": 47
+      },
+      "aspect": 5.766,
+      "palette": [
+        {
+          "hex": "#171717",
+          "coverage": 0.7438
+        },
+        {
+          "hex": "#f5f5f5",
+          "coverage": 0.2004
+        },
+        {
+          "hex": "#808182",
+          "coverage": 0.0255
+        },
+        {
+          "hex": "#474849",
+          "coverage": 0.0186
+        },
+        {
+          "hex": "#bbbcbd",
+          "coverage": 0.0117
+        }
+      ],
+      "detail": {
+        "energy": 55.4776
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 12,
+          "capHeightPx": 23.3,
+          "inkIsDark": false,
+          "allCaps": true,
+          "advance": 0.7936,
+          "advTall": 0.7936,
+          "advX": null,
+          "gap": 0.0965,
+          "xRatio": null,
+          "stemW": 0.2512,
+          "contrast": 1.2105,
+          "serif": 0.8362,
+          "densTall": 0.606,
+          "densX": null,
+          "weight": 0.606
+        },
+        "widthClass": "wide",
+        "weightClass": "bold"
+      }
+    },
+    {
+      "id": "socials",
+      "kind": "control",
+      "note": "slash social links / LinkedIn / GitHub, mint slashes",
+      "grid": null,
+      "box": {
+        "x": 0.8115,
+        "y": 0.836,
+        "w": 0.166,
+        "h": 0.036
+      },
+      "px": {
+        "x": 1662,
+        "y": 1137,
+        "w": 340,
+        "h": 49
+      },
+      "aspect": 6.9388,
+      "palette": [
+        {
+          "hex": "#171717",
+          "coverage": 0.8093
+        },
+        {
+          "hex": "#f5f5f5",
+          "coverage": 0.1329
+        },
+        {
+          "hex": "#504f50",
+          "coverage": 0.0247
+        },
+        {
+          "hex": "#918f91",
+          "coverage": 0.0205
+        },
+        {
+          "hex": "#c4c3c6",
+          "coverage": 0.0126
+        }
+      ],
+      "detail": {
+        "energy": 59.3696
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "ticker",
+      "kind": "text",
+      "note": "grey LAITH MIMI repeated ticker band at the bottom",
+      "grid": null,
+      "box": {
+        "x": 0,
+        "y": 0.9279,
+        "w": 1,
+        "h": 0.0721
+      },
+      "px": {
+        "x": 0,
+        "y": 1262,
+        "w": 2048,
+        "h": 98
+      },
+      "aspect": 20.898,
+      "palette": [
+        {
+          "hex": "#171717",
+          "coverage": 0.8569
+        },
+        {
+          "hex": "#767475",
+          "coverage": 0.1269
+        },
+        {
+          "hex": "#464646",
+          "coverage": 0.0153
+        },
+        {
+          "hex": "#281828",
+          "coverage": 0.0009
+        }
+      ],
+      "detail": {
+        "energy": 27.9483
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 78,
+          "capHeightPx": 34,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.2352,
+          "advTall": 0.2352,
+          "advX": null,
+          "gap": 0.147,
+          "xRatio": 0.5849,
+          "stemW": 0.2368,
+          "contrast": 1.1778,
+          "serif": 0.9003,
+          "densTall": 0.9356,
+          "densX": null,
+          "weight": 0.9356
+        },
+        "widthClass": "compressed",
+        "weightClass": "black",
+        "chosen": {
+          "family": "Commissioner",
+          "weight": 700,
+          "fontSizePx": 48,
+          "source": "index",
+          "fp": {
+            "lines": 1,
+            "glyphs": 13,
+            "capHeightPx": 33.7,
+            "inkIsDark": true,
+            "allCaps": false,
+            "advance": 0.2967,
+            "advTall": 0.2967,
+            "advX": null,
+            "gap": 0.1632,
+            "xRatio": 0.6047,
+            "stemW": 0.2368,
+            "contrast": 1.189,
+            "serif": 1,
+            "densTall": 0.7042,
+            "densX": null,
+            "weight": 0.7042
+          },
+          "stamp": "06d80d9f364c"
+        }
+      }
+    }
+  ],
+  "compSha256": "6656ef44d19c82f029f07256c5dc079f99beff7195b770f83f7c1c64ea31132e",
+  "regionsSource": {
+    "path": ".impeccable/build/regions.json",
+    "sha256": "4c3c1a0cc860f7ed5298a27f23df507328b292cdeba4fa1080e3553d0ab9fdf2"
+  }
+}

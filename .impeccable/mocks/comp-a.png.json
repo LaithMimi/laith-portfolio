@@ -1,0 +1,11 @@
+{
+  "prompt": "A desktop web landing page for the personal portfolio of Laith Mimi, a software engineer who builds AI that helps people learn. Rendered edge to edge at desktop width, crisp readable text, no browser window, device or desk.\n\nThe visitor is a recruiter deciding in seconds who he is, what he builds and how to reach him.\n\nWhat leads: his name as the page's monument. Reading order: a greeting line \"Hey, I'm a Software Engineer & AI Developer\"; the name LAITH MIMI set huge in uppercase across the width; his photo (the man in the reference portrait, green polo, transparent background) standing centred just below and overlapping the name, lit by a soft mint glow; at right a short intro: \"Founder of Quest Solutions and Software Engineering student at Azrieli College. I build RAG-powered tutors and study platforms that adapt to the learner.\"; at bottom left \"E Laithmimi03@gmail.com\" and \"T 054-3600249\"; at bottom right \"/ LinkedIn  / GitHub\"; a vertical SCROLL marker on the right edge. The top of the next band shows the name repeating as a grey horizontal ticker.\n\nFrame: a slim top bar with \"LAITH MIMI\" at left, links Skills, Work, Services, Experience, Contact, and a mint \"Start Project\" pill at right.\n\nThe first reference image is the style source: near-black ground, mint #7AF298 accent, white grotesk type, the giant mint name. Adapt its style into this real page; do not copy its person, name or text. The second reference image is the real portrait to place.",
+  "tool": "higgsfield gpt_image_2_6 (quality high, 2k, 3:2)",
+  "references": [
+    ".impeccable/refs/devsync-hero.png",
+    "public/static/laith-photo-nobg.png"
+  ],
+  "createdAt": "2026-11-06T14:38:07.183Z",
+  "approved": true,
+  "approvedBy": "Laith Mimi (AskUserQuestion, 2026-11-06)"
+}

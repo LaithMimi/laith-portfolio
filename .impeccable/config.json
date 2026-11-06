@@ -1,0 +1,15 @@
+{
+  "buildPath": "comp",
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "space grotesk",
+        "createdAt": "2026-11-06T14:31:50.070Z",
+        "reason": "Brief-pinned: the owner asked to match the DevSync reference, which uses Space Grotesk, and .specify/memory/constitution.md Principle II names it as the site font"
+      }
+    ]
+  }
+}
