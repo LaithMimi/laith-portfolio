@@ -33,7 +33,7 @@ Against the preview server (`BASE=http://localhost:8788`):
 
 ```bash
 curl -s -o /dev/null -w "%{http_code}\n" $BASE/                              # 200
-curl -s $BASE/sitemap.xml | grep -c "laith-mimi-portfolio.pages.dev"         # ≥ 1
+curl -s $BASE/sitemap.xml | grep -c "laith-mimi.pages.dev"         # ≥ 1
 curl -s $BASE/robots.txt | grep "Sitemap:"                                   # present
 curl -s -o /dev/null -w "%{http_code}\n" $BASE/googled00677178c1e649e.html   # 200
 curl -s $BASE/api/contact                                                    # JSON with email, phone, linkedin, github
@@ -104,7 +104,7 @@ grep -o 'href="/static/cv.pdf"' /tmp/page.html && curl -s -o /dev/null -w "%{htt
    npx lighthouse http://localhost:8788 --form-factor=mobile --only-categories=performance,accessibility,best-practices,seo --view
    ```
    **Expected**: each category ≥ 90. Accessibility shows 0 contrast failures.
-4. **Deploy** (gate 5): `npm run deploy`. Then repeat §2, §3 and step 3 of this section against `https://laith-mimi-portfolio.pages.dev`, resubmit the sitemap in Search Console, and test OG previews (LinkedIn Post Inspector, X).
+4. **Deploy** (gate 5): `npm run deploy`. Then repeat §2, §3 and step 3 of this section against `https://laith-mimi.pages.dev`, resubmit the sitemap in Search Console, and test OG previews (LinkedIn Post Inspector, X).
 
 ## Done when
 

@@ -311,7 +311,7 @@ description: "Task list for the DevSync-style portfolio redesign"
 - [X] T076 [P] Update `CLAUDE.md`'s Overview, Commands and Architecture sections to describe the new structure (`src/seo.ts`, `src/content/*`, `src/components/*`, `src/sections/*`, `src/styles/site.css` → `public/static/site.css`, `public/static/site.js`, the `dev:css` second terminal, the `/__styleguide` dev route). Remove the obsolete gotchas (template-literal escaping, unused `caseStudies`, missing cv.pdf, hard-coded domains)
 - [ ] T077 [P] Generate `DESIGN.md` at the repo root from the finished build with the `impeccable-documenter` agent. It records tokens, primitives and section patterns for future work
 - [ ] T078 Run the whole of [quickstart.md](./quickstart.md) (§1–§6) against `npm run build && npm run preview`. Every check passes (Proda: Build and preview the site)
-- [ ] T079 **With Laith's explicit go-ahead only**: merge `001-devsync-redesign` into `main` and run `npm run deploy`. Spot-check https://laith-mimi-portfolio.pages.dev and repeat [quickstart.md](./quickstart.md) §2, §3 and §7 step 3 against it (Proda: Deploy to Cloudflare Pages)
+- [ ] T079 **With Laith's explicit go-ahead only**: merge `001-devsync-redesign` into `main` and run `npm run deploy`. Spot-check https://laith-mimi.pages.dev and repeat [quickstart.md](./quickstart.md) §2, §3 and §7 step 3 against it (Proda: Deploy to Cloudflare Pages)
 - [ ] T080 Post-launch SEO: resubmit the sitemap in Google Search Console, test OG previews (LinkedIn Post Inspector, X), and run the Rich Results Test for Person, ProfilePage and BreadcrumbList with no errors. Proda milestone **Redesign live** then completes (Proda: Do the post-launch SEO checks)
 
 ---

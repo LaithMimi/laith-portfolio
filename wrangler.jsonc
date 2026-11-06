@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "webapp",
+  "name": "laith-mimi",
   "compatibility_date": "2026-01-24",
   "pages_build_output_dir": "./dist",
   "compatibility_flags": [

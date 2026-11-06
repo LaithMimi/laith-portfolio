@@ -5,10 +5,11 @@
     "dev": "vite",
     "dev:css": "tailwindcss -i src/styles/site.css -o public/static/site.css --watch",
     "build:css": "tailwindcss -i src/styles/site.css -o public/static/site.css --minify",
-    "build": "npm run build:css && vite build",
+    "build": "npm run clean && npm run build:css && vite build",
     "preview": "wrangler pages dev",
     "deploy": "npm run build && wrangler pages deploy",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
   },
   "dependencies": {
     "hono": "^4.11.5"

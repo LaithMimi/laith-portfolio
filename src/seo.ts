@@ -9,7 +9,7 @@ import { localePath } from './i18n/ui'
 
 export const seo = {
   author: 'Laith Mimi',
-  siteUrl: 'https://laith-mimi-portfolio.pages.dev',
+  siteUrl: 'https://laith-mimi.pages.dev',
   siteName: 'Laith Mimi Portfolio',
   twitterHandle: '@laithmimi',
   jobTitle: 'Software Engineer & AI Developer',

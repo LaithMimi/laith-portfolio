@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-Single-page personal portfolio for Laith Mimi, built as a Hono app on Cloudflare Pages (Vite + `@hono/vite-build/cloudflare-pages`), deployed at `https://laith-mimi-portfolio.pages.dev`. The visual direction follows the DevSync reference (dark ground, mint `#7AF298` accent, Space Grotesk) per `.specify/memory/constitution.md`. Product context is in `PRODUCT.md`; the active redesign is Spec Kit feature `specs/001-devsync-redesign/`, tracked on the Proda "Portfolio" roadmap.
+Single-page personal portfolio for Laith Mimi, built as a Hono app on Cloudflare Pages (Vite + `@hono/vite-build/cloudflare-pages`), deployed at `https://laith-mimi.pages.dev`. The visual direction follows the DevSync reference (dark ground, mint `#7AF298` accent, Space Grotesk) per `.specify/memory/constitution.md`. Product context is in `PRODUCT.md`; the active redesign is Spec Kit feature `specs/001-devsync-redesign/`, tracked on the Proda "Portfolio" roadmap.
 
 There is no automated test suite. Verification is manual (see `specs/001-devsync-redesign/quickstart.md`).
 

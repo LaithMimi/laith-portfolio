@@ -7,6 +7,7 @@ import type { Locale } from '../content'
 import { getContent } from '../content'
 import { getUi } from '../i18n/ui'
 import { plain } from '../content/tbd'
+import { seo } from '../seo'
 
 export function OgCard({ locale }: { locale: Locale }) {
   const ui = getUi(locale)
@@ -29,7 +30,7 @@ export function OgCard({ locale }: { locale: Locale }) {
             <img class="og-portrait" src="/static/img/laith-portrait.webp" width="1100" height="1716" alt="" />
             <p class="og-meta">
               <span>Quest · AI</span>
-              <span lang="en">laith-mimi-portfolio.pages.dev</span>
+              <span lang="en">{new URL(seo.siteUrl).host}</span>
             </p>
           </div>
         </body>
